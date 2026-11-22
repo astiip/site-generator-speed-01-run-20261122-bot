@@ -171,6 +171,13 @@ genuine mismatch was found; nothing else was changed.
   template compiler, and the `run()` pipeline order. No caches were
   added across `run()` calls — cases stay independent.
 
+## Round 3 — LICENSE rewrite (revision, file tools only)
+
+Kit check failed on exactly one check, `license_osi`: the LICENSE had no
+SPDX identifier. The LICENSE file was rewritten from scratch (fresh
+wording, MIT terms intact) with `SPDX-License-Identifier: MIT` as its
+first line. No other file was touched.
+
 ### Corners still unsure (for parent verification)
 
 - The `SPECIAL_RE` optimisation is the one change whose speed I
